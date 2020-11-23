@@ -1,0 +1,35 @@
+Read Me Mock up
+Will Generate a Readme with Headers and sections like below.
+
+#(Title of Project)
+(badge of license.)
+
+#Table of Contents
+(Creates links to each section
+Description, Installation Instructions, Usage, Contributing, Test, license, Questions)
+
+## Description
+(entered Description)
+
+## Installation Instructions
+(entered instructions)
+
+## Usage
+(entered usage info)
+
+## Contributing
+(entered guidelines)
+
+## Test Instructions
+(entered test instructions)
+
+### license
+(choose from list. notice added that explains which license application is covered under)
+
+### Questions
+(user enters username, provides link to github profile)
+(user enters email, show email with instructions on how to reach with additional questions)
+
+
+
+
