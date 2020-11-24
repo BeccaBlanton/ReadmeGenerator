@@ -67,8 +67,52 @@ inquirer
   ])
   .then((response)=> {
     console.log(response)
-    const fileName = `${response.name.toLowerCase().split(' ').join('')}.html`
-    const readMe = `ReadMe`
-    fs.writeFile(fileName, readMe, (err) => err ? console.log(err) : console.log('yay'))
+    const readMe = `
+    # (Title of Project)
+
+    (badge of license.)
+    
+    ## Table of Contents
+    ==================
+    * [Description](#Description) 
+    * [Installation](#Installation)
+    * [Usage](#Usage) 
+    * [Contributing](#contributing) 
+    * [Test](#test)
+    * [license](#license) 
+    * [Questions](#Questions)
+    
+    ==================
+    
+    ## Description
+    
+    (entered Description)
+    
+    ## Installation
+    
+    (entered instructions)
+    
+    ## Usage
+    
+    (entered usage info)
+    
+    ## Contributing
+    
+    (entered guidelines)
+    
+    ## Test Instructions
+    
+    (entered test instructions)
+    
+    ### license
+    
+    (choose from list. notice added that explains which license application is covered under)
+    
+    ### Questions
+    
+    (user enters username, provides link to github profile)
+    (user enters email, show email with instructions on how to reach with additional questions)`
+
+    fs.writeFile('README.md', readMe, (err) => err ? console.log(err) : console.log('yay'))
 
     })
