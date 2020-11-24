@@ -15,6 +15,7 @@ WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README*/
 const inquirer = require('inquirer');
 const fs = require('fs');
+const { title } = require('process');
 
 inquirer
   .prompt([
@@ -26,38 +27,38 @@ inquirer
     {
       type: 'input',
       message: "Provide Description of Project",
-      name: 'Description',
+      name: 'description',
     },
     {
       type: 'input',
       message: 'Enter Instructions for Installation',
-      name: 'Install Instructions',
+      name: 'install',
     },
     {
         type: 'input',
         message: 'Enter Instructions for Usage',
-        name: 'Usage Instructions',
+        name: 'Usage',
       },
       {
         type: 'input',
         message: 'Enter guidelines for contributing',
-        name: 'Contribution Guidelines',
+        name: 'contribution',
       },
       {
         type: 'input',
         message: 'Enter Instructions for Testing',
-        name: 'test Instructions',
+        name: 'test',
       },
       {
         type: 'list',
         message: 'Chooise Which License',
-        name: 'License',
+        name: 'license',
         choices: ['MIT','GPL',"Apache License 2.0",'BSD' ]
       },
       {
         type: 'input',
         message: 'Enter Github Username',
-        name: 'Username',
+        name: 'github',
       },
       {
         type: 'input',
@@ -68,50 +69,48 @@ inquirer
   .then((response)=> {
     console.log(response)
     const readMe = `
-    # (Title of Project)
-
-    (badge of license.)
+# ${response.title}
+(badge of license.)
     
-    ## Table of Contents
-    ==================
-    * [Description](#Description) 
-    * [Installation](#Installation)
-    * [Usage](#Usage) 
-    * [Contributing](#contributing) 
-    * [Test](#test)
-    * [license](#license) 
-    * [Questions](#Questions)
+## Table of Contents
+==================
+* [Description](#Description) 
+* [Installation](#Installation)
+* [Usage](#Usage) 
+* [Contributing](#contributing) 
+* [Test](#test)
+* [license](#license) 
+* [Questions](#Questions)
+==================
     
-    ==================
+## Description
     
-    ## Description
+${response.description}
     
-    (entered Description)
+## Installation
     
-    ## Installation
+${response.install}
     
-    (entered instructions)
+## Usage
     
-    ## Usage
+${response.usage}
     
-    (entered usage info)
+## Contributing
     
-    ## Contributing
+${response.contribution}
     
-    (entered guidelines)
+## Test Instructions
     
-    ## Test Instructions
+${response.test}
     
-    (entered test instructions)
+### license
     
-    ### license
+${response.license}
     
-    (choose from list. notice added that explains which license application is covered under)
+### Questions
     
-    ### Questions
-    
-    (user enters username, provides link to github profile)
-    (user enters email, show email with instructions on how to reach with additional questions)`
+[Link to GitHub Profile](https://github/${response.github})
+If you have any questions please contact at [${response.email}](${response.email})`
 
     fs.writeFile('README.md', readMe, (err) => err ? console.log(err) : console.log('yay'))
 
