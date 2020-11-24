@@ -65,3 +65,10 @@ inquirer
         name: 'email',
       },
   ])
+  .then((response)=> {
+    console.log(response)
+    const fileName = `${response.name.toLowerCase().split(' ').join('')}.html`
+    const readMe = `ReadMe`
+    fs.writeFile(fileName, readMe, (err) => err ? console.log(err) : console.log('yay'))
+
+    })

@@ -5,8 +5,14 @@ Will Generate a Readme with Headers and sections like below.
 (badge of license.)
 
 #Table of Contents
-(Creates links to each section
-Description, Installation Instructions, Usage, Contributing, Test, license, Questions)
+==================
+* [Description](##Description) 
+* [Installation Instructions](#Installation Instructions)
+* [Usage](#Usage) 
+* [Contributing](#contributing) 
+* [Test](#test)
+* [license](#license) 
+* [Questions](#Questions)
 
 ## Description
 (entered Description)
