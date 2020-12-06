@@ -1,6 +1,7 @@
 
-# blue
-(badge of license.)
+# ReadMe Generator
+
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
     
 ## Table of Contents
 ==================
@@ -8,36 +9,38 @@
 * [Installation](#Installation)
 * [Usage](#Usage) 
 * [Contributing](#contributing) 
-* [Test](#testInstructions)
+* [Testing](#testing)
 * [license](#license) 
 * [Questions](#Questions)
+
 ==================
     
 ## Description
     
-im blue
+This is a Node CLI application used to uatomatically generate a Readme file for projects. I use Javascript, and Node
     
 ## Installation
     
-ba
+Pull up the index.js file from the correct file in your terminal
     
 ## Usage
-    
+
 undefined
     
 ## Contributing
-    
-de
-    
-## Test Instructions
-    
-da
-    
+
+Open source.
+
+## Testing
+
+None
+
 ### license
-    
-MIT
-    
+
+This application is covered under the MIT License. Please see any additional files in GitHub for details. 
+
 ### Questions
-    
-[Link to GitHub Profile](https://github/BeccaBlanton)
+
 If you have any questions please contact at [beccaablanton@gmail.com](beccaablanton@gmail.com)
+
+[Link to GitHub Profile](https://www.github.com/BeccaBlanton)

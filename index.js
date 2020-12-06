@@ -112,7 +112,7 @@ This application is covered under the ${response.license} License. Please see an
 
 If you have any questions please contact at [${response.email}](${response.email})
 
-[Link to GitHub Profile](https://github.com/${response.github})
+[Link to GitHub Profile](https://www.github.com/${response.github})
 
 `
 
