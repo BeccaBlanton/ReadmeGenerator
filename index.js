@@ -24,7 +24,7 @@ inquirer
     {
         type: 'input',
         message: 'Enter Instructions for Usage',
-        name: 'Usage',
+        name: 'usage',
       },
       {
         type: 'input',
