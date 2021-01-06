@@ -1,5 +1,5 @@
 
-# ReadMe Generator
+# Catch 'em All
 
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
     
@@ -17,23 +17,23 @@
     
 ## Description
     
-This is a Node CLI application used to automatically generate a Readme file for projects. Technologies used are Javascript and Node including fs and inquirer within node.
+a simple webpage to store your wishlist of favorite pokemon and track ones you have caught.
     
 ## Installation
     
-Node must be downloaded to use. then Pull up the index.js file from the correct folder in your terminal to start the prompts.
+no installation needed. go to site using URL
     
 ## Usage
 
-follow the prompts within the command line and then once all questions are answered a new file named ReadMe will be created within the same folder that can then be exported out to use for your projects. If you would like to see a video of using this application [click here](https://drive.google.com/file/d/1dqrjSPgdBxw9pqDMW16CnZENQ8iLDGQD/view)
+enter in pokemon you want to catch, can press caught if you found one of your wishlist pokemon, will move to a captured list.
     
 ## Contributing
 
-Open source. feel free to contribute on git hub.
+
 
 ## Testing
 
-None.
+
 
 ### license
 
@@ -44,3 +44,4 @@ This application is covered under the MIT License. Please see any additional fil
 If you have any questions please contact at [beccaablanton@gmail.com](beccaablanton@gmail.com)
 
 [Link to GitHub Profile](https://www.github.com/BeccaBlanton)
+
